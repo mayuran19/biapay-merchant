@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Choose payment method</p>
+    <form action="/payments/token" method="POST">
+      <input type="radio" name="paymentMethod" value="biapay"/> BIA Pay
+      <br/>
+      <input type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
