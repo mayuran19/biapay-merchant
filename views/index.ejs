@@ -3,10 +3,19 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <a href="/payments/choosePaymentMethod">Choose Payment Method</a>
+  
+    <div class="panel panel-success" style="width:400px;margin-left:600px;margin-top: 200px;height:150px;" >
+      <div class="panel-heading" ></div>
+      <div class="panel-body">
+         <button class="btn btn-success" style="margin-top:20px;margin-left:80px;"><a style="color:white" href="/payments/choosePaymentMethod">Choose Payment Method</a></button>
+      </div>
+      </div>
+  <div>
   </body>
 </html>
